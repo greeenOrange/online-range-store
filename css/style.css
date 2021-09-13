@@ -71,6 +71,11 @@ body {
 .cart-main {
   padding-right: 30px;
 }
+hr{
+  width: 700px;
+  color: black;
+  border: 1px solid red;
+}
 .total-btn{
   background-color: rgb(31, 165, 120);
   color:#fff;

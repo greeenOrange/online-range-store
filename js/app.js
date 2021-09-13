@@ -14,12 +14,12 @@ const showProducts = (products) => {
     div.innerHTML = `<div class="single-product">
       <div>
     <img class="product-image" src=${product.image}></img>
-      </div>
+      </div class="card-style">
       <h3>${product.title}</h3>
       <p>Category: <span class="text-info font-weight-bold">${product.category}</span></p>
       <p class="">Rating: <strong class="text-warning">${product.rating.rate}</strong> <span>Rating-Count: <strong class="text-warning">${product.rating.count}</strong></span></p>
       <p></p>
-      <h2>Price: $ ${product.price}</h2>
+      <h2>Price:${product.price}</h2>
       <button onclick="addToCart(${product.id},${product.price})" id="addToCart-btn" class="buy-now btn btn-info">add to cart</button>
       <button class="btn btn-success">Details</button></div>
       </div>

@@ -56,13 +56,10 @@ function loadDetails(id) {
   .then(data =>
     {
     displayDetails.innerHTML= `
-   <div class="text-center">
-   <img class="mx-auto d-block" src="${data.image}" alt="" style="width:300px; margin:auto; display:block">
+   <img class="" src="${data.image}" alt="" style="width:200px; margin:auto; display:block">
    <h4>Catagory: ${data.category}</h4>
    <h4>price: $${data.price}</h4>
-   <p class="text-center"><span class="text-info">Product Discription</span>: ${data.description}</p>
-   </div>
-
+   <p><span class="text-info">Product Discription</span>: ${data.description.slice(0,150)}</p>
     `
   })
 
